@@ -1,7 +1,42 @@
 # jenkins-pipeline
 
-echo "# test webhook" >> README.md
-git add .
-git commit -m "trigger webhook"
-git push
-hi
+In this pipeline project I have Create a app.js,package.json and docker file.
+
+app.js contains javascript file.
+
+package.json contains packages for the javascript file.
+
+Dockerfile contains commands execute the Javascript file.
+
+Jenkinsfile contains pipeline for the project.
+
+Uploaded to github repo and config the jenkins pipeline 
+
+
+In jenkins goto triggers --> GitHub hook trigger for GITScm polling
+
+Pipeline --> pipeline script from scm, Enter github repo link.
+
+Add DockerHub Credentials -->
+
+Go to: Manage Jenkins → Credentials → (global)
+
+Add Username + Password
+
+ID: dockerhub-creds (must match Jenkinsfile)
+
+
+Then,set Github hook===> GitHub repo → Settings → Webhooks → Add Webhook
+
+After successfully upload or update the code , it will be pushed to jenkins ..
+
+Then, Jenkins pust to the images to dockerhub 
+
+Build the images to local machine and run the images with assigning port , run the local host server....
+
+
+<img width="1464" height="1092" alt="image" src="https://github.com/user-attachments/assets/1a6eaaf7-f7b7-4f6b-84ba-cd975e7c03ff" />
+
+
+
+
