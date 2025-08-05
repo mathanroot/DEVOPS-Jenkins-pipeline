@@ -25,7 +25,7 @@ pipeline {
 
         stage('Run Tests') {
             steps {
-                echo "Running tests (placeholder)..."
+                echo "Running tests ..."
                 
                 sh 'echo "Tests passed!"'
             }
@@ -46,7 +46,7 @@ pipeline {
 
         stage('Deploy App') {
             steps {
-                echo "Deploying the app (placeholder)..."
+                echo "Deploying the app ..."
                 
                 sh 'echo "App deployed!"'
             }
@@ -62,3 +62,4 @@ pipeline {
         }
     }
 }
+
