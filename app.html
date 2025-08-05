@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WELCOME PAGE</title>
+</head>
+<body>
+  <h2>WELCOME PAGE</h2>
+
+  
+
+  <label>Enter your name:</label>
+  <input type="text" id="nameInput" placeholder="Your name">
+  <button onclick="sayHello()">Greet</button>
+
+ 
+
+  <p id="output"></p>
+
+   <h1 id="data" style="color: red;"></h1>
+
+  <script>
+    function sayHello() {
+      const name = document.getElementById("nameInput").value;
+      const message = "Hello, " + name + "! Welcome to JavaScript.";
+      document.getElementById("output").textContent = message;
+
+      const ele="In this program run by CICD Pipeline with Jenkins";
+      document.getElementById("data").textContent=ele;
+
+    }
+  </script>
+</body>
+</html>
