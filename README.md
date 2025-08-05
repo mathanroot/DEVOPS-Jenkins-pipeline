@@ -32,7 +32,7 @@ After successfully upload or update the code , it will be pushed to jenkins ..
 
 Then, Jenkins pust to the images to dockerhub 
 
-Build the images to local machine and run the images with assigning port , run the local host server....
+Build the images to local machine and run the images with assigning port , run the local host server......
 
 
 <img width="1464" height="1092" alt="image" src="https://github.com/user-attachments/assets/1a6eaaf7-f7b7-4f6b-84ba-cd975e7c03ff" />
